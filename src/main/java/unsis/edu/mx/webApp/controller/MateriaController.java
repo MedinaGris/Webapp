@@ -27,6 +27,9 @@ public class MateriaController {
 	public void actualizarMateria(@RequestBody Materia materia, @PathVariable("idMateria")Long idMateria) {
 		materia.setCodigo(idMateria);
 		
+		
+		
+		//jo	qihugsadyfvhidskjs
 
 		service.actualizarMateria(materia);
 	}
