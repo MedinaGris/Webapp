@@ -10,4 +10,5 @@ public interface IMateriaService {
 	public void eliminarMateria(Materia materia);
 	public Materia obtenerMateria(Long idMateria);
 	public List<Materia>obtenerListaMateria();
+	
 }

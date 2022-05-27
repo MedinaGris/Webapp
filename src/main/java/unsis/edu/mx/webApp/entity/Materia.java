@@ -9,16 +9,14 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity//permite que esta clase se traduce a tabla en base de datos
 @Table(name = "materia")//renombrar la tabka en la base de datos
 @Data //getter y setter 
 
-//@NoArgsConstructor  
-//@AllArgsConstructor
+@NoArgsConstructor  
+@AllArgsConstructor
 public  class Materia {
 	@Id//llave primaria de la bd
 	@GeneratedValue(strategy=GenerationType.IDENTITY)//serial
@@ -36,13 +34,6 @@ public  class Materia {
 	private double parcial3;
 	@Column(name="promedio",nullable=true)
 	private double promedio;
-	
-	
-	
-	
-	
-	
-	
 }
 
 //TERMINAR CLASE CON 	 Y AGREGAR LOMBOK

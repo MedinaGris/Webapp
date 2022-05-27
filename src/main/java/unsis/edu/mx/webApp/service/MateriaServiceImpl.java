@@ -38,8 +38,9 @@ public class MateriaServiceImpl implements IMateriaService{
 
 	@Override
 	public List<Materia> obtenerListaMateria() {
-		
 		return repository.findAll();
 	}
+
+
 
 }
